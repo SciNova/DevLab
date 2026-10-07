@@ -1,0 +1,56 @@
+# Only known, accounted-for things are ignored here: software/tool
+# byproducts, and the canonical set of DevLab + project repos. Everything
+# else -- any folder or file a person drops into home that isn't on this
+# list -- is meant to show up as untracked in a plain `git status`, with
+# no flag, so it gets noticed and dealt with.
+#
+# Project repos are ignored (not tracked/added) here on purpose: each one
+# has its own .git and its own status/diff; this file's only job is to
+# flag what doesn't belong.
+
+# dotfiles: shell/app state, caches, credentials
+.*
+!/.gitignore
+
+# DevLab-managed proot containers (DevLab.py KNOWN), rebuilt on demand
+/DEBIAN-13
+/UBUNTU-24
+/FEDORA-44
+
+# Termux SD card mount and its symlink
+/sdcard
+/storage
+
+# docs and tokens kept directly in home (the .txt files are raw GitHub
+# tokens -- never to be tracked, since this repo is public)
+/*.md
+/*.txt
+
+# the canonical project repos
+/AIofZen
+/Astro
+/ChatPad
+/Date
+/Fonts
+/Fonts-dev
+/Hebrew
+/HebrewDate-android
+/InferenceServer
+/MediaTools
+/ProjectPad
+/Psalms-android
+/ReubenInstitute.github.io
+/Scinova.github.io
+/Scriptures
+/ScripturesStudio
+/StyledScriptures
+/TheStrip
+/UsbThing-android
+/VAULT
+/Vendix
+/audiobible-shmueloff-source
+/audiobible-titles
+/ffmpeg-python
+/reubeninstitute-css
+/reubeninstitute-fonts
+/uqsadeuqsa.github.io
