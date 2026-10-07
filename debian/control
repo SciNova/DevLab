@@ -1,0 +1,8 @@
+Package: claude-termux
+Version: 0.1.0
+Architecture: aarch64
+Maintainer: Robert Wallner <robert.wallner.edward@gmail.com>
+Depends: glibc-runner
+Description: Claude Code (glibc build) patched to run natively under Termux
+ Ships the patched linux-arm64 glibc build of Claude Code and the
+ Termux wrapper that clears LD_PRELOAD before exec'ing it.
