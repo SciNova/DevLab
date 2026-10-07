@@ -24,6 +24,7 @@
 # docs and tokens kept directly in home (the .txt files are raw GitHub
 # tokens -- never to be tracked, since this repo is public)
 /*.md
+!/README.md
 /*.txt
 
 # the canonical project repos
